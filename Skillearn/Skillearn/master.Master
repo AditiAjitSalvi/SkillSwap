@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Skillearn.master" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Skill Swap Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <form runat="server">
+        <!-- Header / Nav Bar -->
+        <header class="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-700">Skill Swap Hub</h1>
+            <nav class="space-x-6">
+                <a href="Dashbord.aspx" class="text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="Skills.aspx" class="text-gray-700 hover:text-indigo-600">Skills</a>
+                <a href="LiveChat.aspx" class="text-gray-700 hover:text-indigo-600">Live Chat</a>
+                <a href="SkillBuddy.aspx" class="text-gray-700 hover:text-indigo-600">My SkillBuddy</a>
+                <a href="About.aspx" class="text-gray-700 hover:text-indigo-600">About</a>
+                <a href="Profile.aspx" class="text-indigo-600 font-semibold underline">Profile</a>
+                <a href="Home.aspx" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md">Logout</a>
+            </nav>
+        </header>
+
+        <!-- Content Placeholder -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </form>
+</body>
+</html>
